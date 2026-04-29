@@ -12,4 +12,8 @@
     background-image: url("111.png");
     background-size: cover;
     background-position: center;
+    text-align: center;
+}
+.shop{
+    text-align: center;
 }
