@@ -8,3 +8,8 @@
     display: flex;
     gap: 16px;
 }
+.hero {
+    background-image: url("wine.jpg");
+    background-size: cover;
+    background-position: center;
+}
