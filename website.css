@@ -1,0 +1,10 @@
+.mobile-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 16px;
+}
