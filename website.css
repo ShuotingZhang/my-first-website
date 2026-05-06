@@ -144,9 +144,7 @@ body {
 
 }
 .picks-banner img {
-
     width: 54px;
-
 }
 .picks-banner h1 {
     margin: 0;
@@ -162,16 +160,13 @@ body {
     padding: 50px 40px;
 }
 
-
 /* ===== QUESTION TITLE ===== */
-
 .question-sec h2 {
     text-align: center;
     font-size: 52px;
     font-weight: 500;
     margin-top: 40px;
 }
-
 
 /* ===== QUESTION TEXT ===== */
 
