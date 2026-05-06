@@ -1,18 +1,17 @@
 body {
-    /* remove blank margin */
-    margin: 0; 
+    margin: 0; /* remove blank margin */
     background: linear-gradient(#C0C0C0, #786D6D);
     font-family: Kalnia;
 }
+
 .mobile-nav {
-    display: flex;
-    justify-content: space-between;
+    display: flex; /* in same line */
+    justify-content: space-between; /* menu ----- cart.. */
     align-items: center;
-    padding: 40px 0 40px 0;
 }
 
 .nav-icons {
-    display: flex;
+    display: flex; /* in same line */
     gap: 16px;
 }
 .hero {
@@ -49,6 +48,9 @@ body {
 }
 
 .nav-icons button {
+    width: 56px;
+
+    border: 2px solid white;
     border: none;
     background: transparent;
     padding: 0;
@@ -130,7 +132,28 @@ body {
 
     padding: 40px 0;
 }
+.picks-banner {
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    padding: 20px 44px;
+    margin-top: 24px;
+    background: linear-gradient(to right, #3b0202, #c52b2b);
+
+}
+.picks-banner img {
+
+    width: 54px;
+
+}
+.picks-banner h1 {
+    margin: 0;
+    color: white;
+    font-size: 38px;
+    font-style: italic;
+}
 
 
 /* ===== QUESTION SECTION ===== */
@@ -161,7 +184,7 @@ body {
 
 /* ===== ANSWER GRID ===== */
 .answer-grid {
-    display: grid;
+    display: grid; /* layout */
     grid-template-columns: 1fr 1fr;  /* it is fraction*/
     gap: 50px; /* the margin between buttons */
     margin-top: 70px;
@@ -170,7 +193,7 @@ body {
 /* ===== ANSWER BUTTON ===== */
 
 .answer-button {
-    height: 60px;
+    height: 70px;
     border: none; /* remove border */
     border-radius: 40px; 
     font-size: 24px;
