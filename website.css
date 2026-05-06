@@ -120,3 +120,96 @@ body {
     font-size: 36px;
     font-style: italic;
 }
+
+/* ===== MOBILE NAV ===== */
+
+.mobile-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 40px 0;
+}
+
+
+
+/* ===== QUESTION SECTION ===== */
+
+.question-sec {
+    padding: 50px 40px;
+}
+
+
+/* ===== QUESTION TITLE ===== */
+
+.question-sec h2 {
+    text-align: center;
+    font-size: 52px;
+    font-weight: 500;
+    margin-top: 40px;
+}
+
+
+/* ===== QUESTION TEXT ===== */
+
+.question {
+    font-size: 32px;
+    line-height: 2;
+    margin-top: 70px;
+}
+
+
+/* ===== ANSWER GRID ===== */
+.answer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;  /* it is fraction*/
+    gap: 50px; /* the margin between buttons */
+    margin-top: 70px;
+}
+
+/* ===== ANSWER BUTTON ===== */
+
+.answer-button {
+    height: 60px;
+    border: none; /* remove border */
+    border-radius: 40px; 
+    font-size: 24px;
+    color: white;
+    font-family: 'Kalnia';
+    background: linear-gradient(to right, #8b0000, #3b0000);
+}
+
+
+/* ===== SURPRISE BUTTON ===== */
+
+.question-sec > .answer-button:last-of-type {
+    width: 100%;
+    margin-top: 50px;
+}
+
+
+/* ===== NEXT BUTTON ===== */
+
+.next-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 60px;
+    margin-left: auto; /* next button will stay at right */
+    margin-top: 50px;
+    border-radius: 40px;
+    text-decoration: none; /*remove underline*/
+    color: white;
+    font-size: 28px;
+    background: linear-gradient(to right, #ff7b7b, #d90000);
+}
+
+/* ===== FOOTER LOGO ===== */
+.footer-logo {
+    margin-top: 80px;
+    margin-left: 20px;
+}
+.footer-logo img {
+    width: 120px;
+}
