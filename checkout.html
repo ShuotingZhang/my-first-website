@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+
+    <link rel="stylesheet" href="website.css">
+</head>
+
+<body>
+    <header class="mobile-nav">
+        <a href="filters.html" class="menu">
+            <img src="images/filter.png" alt="filter">
+        </a>
+
+        <nav class="desktop-filter-nav">
+            <a href="filters.html">STYLE</a>
+            <a href="filters.html">OCCASION</a>
+            <a href="filters.html">FLAVOR</a>
+            <a href="filters.html">PRICE</a>
+        </nav>
+
+        <div class="nav-icons">
+            <button><img src="images/search.png" alt="search"></button>
+            <button><img src="images/like.png" alt="like"></button>
+            <button><img src="images/cart.png" alt="cart"></button>
+        </div>
+    </header>
+
+    <main class="checkout-sec">
+        <section class="checkout-title-bar">
+            <h1>CHECK OUT</h1>
+        </section>
+
+        <form class="checkout-form" action="confirmation.html">
+            <h2>Payment Details</h2>
+
+            <label for="card-name">Name On Card</label>
+            <input id="card-name" type="text" placeholder="Shuoting Zhang">
+
+            <label for="card-number">Card Number</label>
+            <input id="card-number" type="text" placeholder="1234 1234 1234 1234">
+
+            <div class="form-row">
+                <div class="small-field">
+                    <label for="cvv">CVV</label>
+                    <input id="cvv" type="text" placeholder="123">
+                </div>
+
+                <div class="large-field">
+                    <label for="expiry">Expiry</label>
+                    <input id="expiry" type="text" placeholder="01/01/2026">
+                </div>
+            </div>
+
+            <label for="address">Billing Address</label>
+            <input id="address" type="text" placeholder="233 St. Melbourne. VIC 3000">
+
+            <div class="form-row">
+                <div class="small-field">
+                    <label for="state">State</label>
+                    <input id="state" type="text" placeholder="VIC">
+                </div>
+
+                <div class="large-field">
+                    <label for="postcode">Post Code</label>
+                    <input id="postcode" type="text" placeholder="3000">
+                </div>
+            </div>
+
+            <button class="checkout-submit" type="submit">CHECK OUT</button>
+        </form>
+    </main>
+</body>
+</html>
