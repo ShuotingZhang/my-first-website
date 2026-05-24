@@ -390,3 +390,167 @@ body {
         font-size: 26px;
     }
 }
+
+
+
+.desktop-filter-nav {
+    display: flex;
+    gap: 70px;
+    align-items: center;
+}
+
+.desktop-filter-nav a {
+    color: white;
+    font-size: 16px;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.filters-sec {
+    min-height: 100vh;
+    padding-bottom: 120px;
+    background: linear-gradient(#f5f2f2, #bdb8b8, #1e1e1e);
+}
+
+.filter-title-bar {
+    display: flex;
+    align-items: center;
+    gap: 260px;
+    padding: 18px 50px;
+    background: linear-gradient(to right, #300000, #c32626);
+}
+
+.filter-title-bar img {
+    width: 48px;
+}
+
+.filter-title-bar h1 {
+    margin: 0;
+    color: white;
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.filter-panel {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 30px 35px 50px 35px;
+}
+
+.filter-group {
+    margin-bottom: 28px;
+}
+
+.filter-group h2 {
+    margin: 0 0 18px 0;
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 400;
+    color: black;
+}
+
+.filter-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 28px;
+}
+
+.filter-options button {
+    min-width: 150px;
+    padding: 8px 26px;
+    border: none;
+    border-radius: 24px;
+    background: linear-gradient(to right, #5a0d0d, #7d1a1a);
+    color: white;
+    font-family: "Kalnia", serif;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.price-line {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    border-top: 2px solid black;
+}
+
+.price-point {
+    position: relative;
+    text-align: center;
+}
+
+.price-point span {
+    display: block;
+    width: 28px;
+    height: 28px;
+    margin: -15px auto 8px auto;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.price-point p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.filter-actions {
+    display: flex;
+    justify-content: center;
+    gap: 240px;
+    margin-top: 80px;
+}
+
+.reset-btn,
+.apply-btn {
+    min-width: 170px;
+    padding: 12px 28px;
+    border-radius: 26px;
+    background: linear-gradient(to right, #ed706d, #d81918);
+    color: white;
+    font-size: 22px;
+    font-style: italic;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+    .desktop-filter-nav {
+        display: none;
+    }
+
+    .filter-title-bar {
+        gap: 80px;
+        padding: 16px 28px;
+    }
+
+    .filter-title-bar img {
+        width: 42px;
+    }
+
+    .filter-panel {
+        padding: 28px 26px 50px 26px;
+    }
+
+    .filter-options {
+        gap: 16px;
+    }
+
+    .filter-options button {
+        min-width: 130px;
+        font-size: 18px;
+    }
+
+    .filter-actions {
+        gap: 40px;
+        margin-top: 70px;
+    }
+
+    .reset-btn,
+    .apply-btn {
+        min-width: 120px;
+        font-size: 18px;
+    }
+}
