@@ -15,7 +15,7 @@ body {
     gap: 16px;
 }
 .hero {
-    background-image: url("111.png");
+    background-image: url("images/111.png");
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -913,6 +913,9 @@ body {
 }
 
 
+/* =========================
+   checkout page
+========================= */
 
 .checkout-sec {
     min-height: 100vh;
@@ -920,8 +923,8 @@ body {
 }
 
 .checkout-title-bar {
-    padding: 28px 0;
-    background: linear-gradient(to right, #240000, #b42a26);
+    padding: 26px 0;
+    background: linear-gradient(to right, #250000, #b92926);
     text-align: center;
 }
 
@@ -937,7 +940,7 @@ body {
 .checkout-form {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 28px 28px 80px 28px;
+    padding: 26px 28px 80px 28px;
 }
 
 .checkout-form h2 {
@@ -959,22 +962,23 @@ body {
     padding: 8px 16px;
     border: none;
     border-radius: 20px;
-    background-color: #f5cfcf;
+    background-color: #f7cfcf;
     font-size: 16px;
 }
 
 .form-row {
     display: grid;
-    grid-template-columns: 0.35fr 0.65fr;
+    grid-template-columns: 160px 1fr;
     gap: 360px;
+    align-items: end;
 }
 
 .small-field input {
-    max-width: 130px;
+    width: 130px;
 }
 
 .large-field input {
-    max-width: 520px;
+    width: 520px;
 }
 
 .checkout-submit {
@@ -991,6 +995,7 @@ body {
     cursor: pointer;
 }
 
+/* mobile */
 @media (max-width: 768px) {
     .checkout-form {
         padding: 24px 22px 70px 22px;
@@ -1003,7 +1008,7 @@ body {
 
     .small-field input,
     .large-field input {
-        max-width: 100%;
+        width: 100%;
     }
 
     .checkout-title-bar h1 {
@@ -1011,107 +1016,89 @@ body {
     }
 }
 
-
-
 .confirmation-sec {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     min-height: 100vh;
-    padding: 60px 30px;
-    background: linear-gradient(#f6f4f4, #b8b8b8, #2a2a2a);
+    padding: 70px 40px;
+    background: linear-gradient(#f7f5f5, #b8b8b8, #262626);
 }
 
 .confirmation-card {
     position: relative;
     overflow: hidden;
-    display: flex;
-    align-items: center;
-    width: 1000px;
-    min-height: 420px;
-    padding: 40px 60px;
-    border-radius: 70px;
-    background-color: #6b4c4c;
+
+    width: 90%;
+    max-width: 1180px;
+    height: 560px;
+
+    margin: 60px auto 0 auto;
+    border-radius: 80px;
+    background-color: #6b4d4d;
 }
 
 .confirmation-glow {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 700px;
-    height: 320px;
-    transform: translate(-50%, -50%) rotate(45deg);
+
+    width: 620px;
+    height: 620px;
+
+    transform:
+        translate(-50%, -50%)
+        rotate(45deg)
+        scaleX(1.9)
+        scaleY(0.5);
+
     background: radial-gradient(
-        rgba(255, 70, 70, 0.95),
-        rgba(255, 70, 70, 0)
+        circle,
+        rgba(255, 75, 70, 0.95) 0%,
+        rgba(220, 50, 48, 0.75) 30%,
+        rgba(135, 40, 40, 0.35) 55%,
+        rgba(107, 77, 77, 0) 72%
     );
 }
 
 .confirmation-text {
     position: relative;
     z-index: 2;
-    margin-left: 140px;
+
+    padding-top: 130px;
+    padding-left: 300px;
 }
 
 .confirmation-text h1 {
     margin: 0;
+
     color: white;
-    font-size: 72px;
-    line-height: 1.05;
+    font-size: 76px;
+    line-height: 1.2;
     font-style: italic;
     font-weight: 400;
 }
 
 .confirmation-text p {
-    margin-top: 28px;
+    margin-top: 18px;
+    margin-left: 410px;
+
     color: white;
-    font-size: 28px;
-    line-height: 1.3;
+    font-size: 34px;
+    line-height: 1.25;
 }
 
 .confirm-logo {
     position: absolute;
-    left: 40px;
-    bottom: 28px;
-    width: 100px;
+    left: 58px;
+    bottom: 45px;
+
+    width: 115px;
     z-index: 2;
 }
 
 .confirm-thumb {
     position: absolute;
-    right: 42px;
-    bottom: 32px;
-    width: 80px;
+    right: 58px;
+    bottom: 55px;
+
+    width: 82px;
     z-index: 2;
-}
-
-/* mobile */
-@media (max-width: 768px) {
-    .confirmation-card {
-        width: 100%;
-        min-height: 520px;
-        padding: 40px 28px;
-        border-radius: 40px;
-    }
-
-    .confirmation-text {
-        margin-left: 0;
-        text-align: center;
-    }
-
-    .confirmation-text h1 {
-        font-size: 48px;
-    }
-
-    .confirmation-text p {
-        font-size: 22px;
-    }
-
-    .confirm-logo {
-        width: 70px;
-    }
-
-    .confirm-thumb {
-        width: 60px;
-    }
 }
