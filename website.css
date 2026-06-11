@@ -1102,3 +1102,9 @@ body {
     width: 82px;
     z-index: 2;
 }
+
+.filter-options button.selected {
+    background: #d62828;
+    color: white;
+    border: 3px solid white;
+}
