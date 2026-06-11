@@ -1121,3 +1121,7 @@ body {
     color: #d62828;
     font-weight: bold;
 }
+.heart-btn.liked {
+    color: red;
+    transform: scale(1.2);
+}
