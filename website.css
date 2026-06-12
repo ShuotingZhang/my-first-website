@@ -236,7 +236,6 @@ body {
     min-height: 100vh;
     padding: 60px 40px 120px 40px;
     text-align: center;
-    background: linear-gradient(#f5f2f2, #bdb8b8, #1e1e1e);
 }
 
 .results-sec h2 {
@@ -409,7 +408,6 @@ body {
 .filters-sec {
     min-height: 100vh;
     padding-bottom: 120px;
-    background: linear-gradient(#f5f2f2, #bdb8b8, #1e1e1e);
 }
 
 .filter-title-bar {
@@ -920,7 +918,6 @@ body {
 
 .checkout-sec {
     min-height: 100vh;
-    background: linear-gradient(#f7f5f5, #b9b9b9, #2b2b2b);
 }
 
 .checkout-title-bar {
@@ -969,17 +966,16 @@ body {
 
 .form-row {
     display: grid;
-    grid-template-columns: 160px 1fr;
-    gap: 360px;
-    align-items: end;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
 }
 
 .small-field input {
-    width: 130px;
+    width:  100%;
 }
 
 .large-field input {
-    width: 520px;
+    width:  100%;
 }
 
 .checkout-submit {
@@ -1020,7 +1016,6 @@ body {
 .confirmation-sec {
     min-height: 100vh;
     padding: 70px 40px;
-    background: linear-gradient(#f7f5f5, #b8b8b8, #262626);
 }
 
 .confirmation-card {
