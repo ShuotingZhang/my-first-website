@@ -30,3 +30,4 @@ productCards.forEach(function(card) {
         alert("Added to cart!");
     });
 });
+

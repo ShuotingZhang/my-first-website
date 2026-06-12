@@ -789,6 +789,7 @@ body {
     font-size: 23px;
     font-weight: 400;
     line-height: 1.2;
+    min-height: 90px;
 }
 
 .cart-image-box {

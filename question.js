@@ -1,4 +1,7 @@
 const answerButtons = document.querySelectorAll(".answer-button");
+const nextButton = document.querySelector(".next-btn");
+
+let selectedAnswer = false;
 
 answerButtons.forEach(function(button) {
 
@@ -10,6 +13,20 @@ answerButtons.forEach(function(button) {
 
         button.classList.add("selected");
 
+        selectedAnswer = true;
+
     });
+
+});
+
+nextButton.addEventListener("click", function(event) {
+
+    if (selectedAnswer === false) {
+
+        event.preventDefault();
+
+        alert("Please select an answer first.");
+
+    }
 
 });
