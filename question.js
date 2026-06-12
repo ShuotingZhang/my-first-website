@@ -30,3 +30,16 @@ nextButton.addEventListener("click", function(event) {
     }
 
 });
+const filterLink = document.querySelector(".filter-link");
+
+filterLink.addEventListener("click", function(event) {
+
+    const leavePage = confirm("Go to Filters? Your current answer will not be saved.");
+
+    if (leavePage === false) {
+
+        event.preventDefault();
+
+    }
+
+});
