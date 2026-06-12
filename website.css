@@ -275,7 +275,7 @@ body {
 }
 
 .product-image-box img {
-    width: 70px;
+    width: 140px;
     height: auto;
 }
 
@@ -1124,4 +1124,12 @@ body {
 .heart-btn.liked {
     color: red;
     transform: scale(1.2);
+}
+
+.detail-image-circle img {
+
+    width: 200px;
+
+    height: auto;
+
 }
